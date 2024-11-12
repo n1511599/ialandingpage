@@ -1,1 +1,510 @@
-hello World!
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--
+<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="expires" content="0" />
+-->
+		
+		<link rel="shortcut icon" href="images/mdrn_blue_home.png"> 
+		<link rel="apple-touch-icon" href="images/mdrn_blue_home.png">	
+		<title>Landing Page</title>
+	
+
+
+
+	
+		<!-- Sharepoint Javascript -->
+		<script type="text/javascript" src="//libertymutual.sharepoint.com///libertymutual.sharepoint.com///ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js"></script>
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+		<script src="JavaScript.js"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+		
+
+<script>
+jQuery(document).ready(function($){
+  //you can now use $ as your jQuery object.
+  var body = $( 'body' );
+});
+</script>
+
+<!-- Master page addition -->
+ <SharePoint:ScriptLink language="javascript" name="~sitecollection/assets/js/jquery.js" runat="server" OnDemand="False" LoadAfterUI="True" />
+
+ <SharePoint:ScriptLink Name="sp.js" runat="server" LoadAfterUI="true" Localizable="false" />
+ <SharePoint:ScriptLink Name="sp.runtime.js" runat="server" LoadAfterUI="true" Localizable="false" />
+ <SharePoint:ScriptLink Name="sp.core.js" runat="server" LoadAfterUI="true" Localizable="false" />
+ 
+
+		
+		<!--
+		<script type="text/javascript" src="https://libertymutual.sharepoint.com/:u:/r/sites/ADS_BI/Shared%20Documents/sp.runtime.js"></script>
+		
+		<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19925.12013//online/scripts/sposuitenav.js"></script>
+		<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19925.12013/sp.js"></script>
+		<script type="text/javascript" src="https://static.sharepointonline.com/bld/_layouts/15/16.0.19925.12013/sp.core.js"></script>
+		
+		<script type="text/javascript" src="/:u:/r/sites/ADS_BI/Shared%20Documents/sp.runtime.js"></script> 
+		<script type="text/javascript" src="https://libertymutual.sharepoint.com/:u:/r/sites/ADS_BI/Shared%20Documents/sp.js"></script>
+
+    <script src="/_layouts/1033/init.js"></script>
+    <script src="/_layouts/sp.core.js"></script>
+    <script src="/_layouts/sp.runtime.js"></script>
+    <script src="/_layouts/sp.js"></script>
+	<script type="text/javascript" src="/:u:/r/sites/ADS_BI/Shared%20Documents/sp.runtime.js"></script>
+-->
+
+
+
+
+
+		<!-- Javascript -->
+		<!--<script src="sp_fav.js"></script>-->
+
+
+		<!-- JS to load Navigation bar -->
+		<script>
+		
+			//$(function(){$("#box5_").load("script_test.aspx");});/*this is hidden*/
+			//$(function(){$("#favorites").load("Favorites_List.aspx");});
+			$(function(){$("#NewNavBar").load("nav.aspx");});
+			$(function(){$("#mySidenav").load("HelpSideNav.aspx");});
+			$(function(){$("#footer").load("footer.aspx");});
+			$(function(){$("#BIFmySidenav").load("left_side_nav.aspx");});
+			$(function(){$("#box1_").load("calendar.aspx");});
+			//$(function(){$("#box2_").load("announcements.aspx");});
+			//$(function(){$("#box3_").load("quick_links.aspx");});
+				
+		</script> 
+		
+
+		<!-- CSS -->
+		<link href="css/styling.css" rel="stylesheet" type="text/css" />
+		<link href="css/biflow.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+
+</head>
+
+<body><!-- New Body Start (old was line 15) -->
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="NewNavBar" class="NewNavBar"></div>
+<div id="main">                   
+	<div id="wrapper">
+	<div id="header">
+	</div><!--header-->
+	
+	<!--
+		<div id="title">  
+		<img src="images/ADSBILogo.PNG" height="90px">
+			<div id="title_text">
+				<p>Welcome to the AD&S Business Intelligence - BL & Safeco Report Navigation site!</p>
+			</div>				
+		</div>-->
+		<!-- Make title1 divs display=block as default view -- multiple cards can be set up here -->
+		<!-- Make title1 div display=none as default view-->
+		<!--
+		<div class="boxs" id="box1">
+			<p style='text-align: center; height: 100%; line-height: 250px; vertical-align: middle;'>Loading Calendar... </p>
+			<div id="box1_" style='position: absolute; top: 0px; width: 100%;'></div>
+		</div>
+		
+		<div class="boxs" id="box2">
+			<p style='text-align: center; height: 100%; line-height: 250px; vertical-align: middle;'>Loading Announcements... </p>
+			<div id="box2_" style='position: absolute; top: 0px; width: 100%;'></div>
+		</div>
+		<div class="boxs" id="box3">
+			<p style='text-align: center; height: 100%; line-height: 250px; vertical-align: middle;'>Loading helpful links... </p>
+			<div id="box3_" style='position: absolute; top: 0px; width: 100%;'></div>
+		</div>
+		<div class="boxs" id="box4">
+			<p style='text-align: center; height: 100%; line-height: 250px; vertical-align: middle;'></p>
+			<div id="box4_" style='position: absolute; top: 0px; width: 100%;'></div>
+		</div>
+		
+		<div id="title1" style='display:none;'>
+		
+					  <script type='text/javascript' src='https://citableau.lmig.com/javascripts/api/viz_v1.js'></script>
+					  
+					  <div class='tableauPlaceholder' style='overflow: hidden;padding-top: 0px;'>
+						  <img id="loader1" src="images/LoadScreenTest.gif" style='z-index:99;position:relative;background-color:white;' width="100%" height="950px" alt="loading gif"/>
+						   <iframe class='tableauViz' id="iframe1" name="mainFrame" style='border: 0;' scrolling='no' width="100%" height="100%"
+						   > </iframe>
+					  </div>
+		</div>
+-->
+
+		<div id="HomeDash_Container" style='display:block;'>			  
+
+						   <iframe class='HomeDashboard' id="iframehome" name="homeFrame" style='border: 0;' scrolling='no' width="100%" height="100%"
+						   src='https://app.powerbi.com/reportEmbed?reportId=bc476fdd-3b51-4c20-9ba8-52cbeb91931a&appId=e28bce76-ecd1-4fa0-9030-13f7edeaa4da&autoAuth=true&ctid=08a83339-90e7-49bf-9075-957ccd561bf1'> 
+						   
+						   </iframe>
+
+		</div>
+
+
+
+		<script>
+/*
+			var indicator = document.getElementById("loader1");
+			var iframe = document.getElementById("iframe1");
+			function start_iframe() {
+			   indicator.style.display = 'flex';
+			   iframe.style.display = 'none';
+				var element = document.getElementById("title1");
+				
+				var box1 = document.getElementById("box1");
+				var box2 = document.getElementById("box2");
+				var box3 = document.getElementById("box3");
+				var box4 = document.getElementById("box4");
+				var title_box = document.getElementById("title");
+					if (element.style.display == "none") {
+						  element.style.display = "block";
+						  box1.style.display = "none";
+						  box2.style.display = "none";
+						  box3.style.display = "none";
+						  box4.style.display = "none";
+						  title_box.style.display = "none";
+					} 
+					else {
+						  element.style.display = "block";	
+					}									
+			};
+
+			$('#iframe1').load(function(){
+				var element = document.getElementById("title1");
+				
+				var box1 = document.getElementById("box1");
+				var box2 = document.getElementById("box2");
+				var box3 = document.getElementById("box3");
+				var box4 = document.getElementById("box4");
+				var title_box = document.getElementById("title");
+					if (element.style.display == "none") {
+						  element.style.display = "block";
+						  box1.style.display = "none";
+						  box2.style.display = "none";
+						  box3.style.display = "none";
+						  box4.style.display = "none";
+						  title_box.style.display = "none";
+					} 
+					else {
+						  element.style.display = "block";	
+					}
+			
+				indicator.style.display = 'none';
+				iframe.style.display = 'block';
+			});
+
+
+			var loaded_iframe = function(iframe) {
+
+				var element = document.getElementById("title1");
+				
+				var box1 = document.getElementById("box1");
+				var box2 = document.getElementById("box2");
+				var box3 = document.getElementById("box3");
+				var box4 = document.getElementById("box4");
+				var title_box = document.getElementById("title");
+					if (element.style.display == "none") {
+						  element.style.display = "block";
+						  box1.style.display = "none";
+						  box2.style.display = "none";
+						  box3.style.display = "none";
+						  box4.style.display = "none";
+						  title_box.style.display = "none";
+					} 
+					else {
+						  element.style.display = "block";	
+					}
+			
+				indicator.style.display = 'none';
+			};
+			
+	*/					
+			
+			/*
+			
+			function start_iframe() {
+			   indicator.style.display = 'flex';
+
+				var element = document.getElementById("title1");
+				
+				var box1 = document.getElementById("box1");
+				var box2 = document.getElementById("box2");
+				var box3 = document.getElementById("box3");
+				var box4 = document.getElementById("box4");
+				var title_box = document.getElementById("title");
+					if (element.style.display == "none") {
+						  element.style.display = "block";
+						  box1.style.display = "none";
+						  box2.style.display = "none";
+						  box3.style.display = "none";
+						  box4.style.display = "none";
+						  title_box.style.display = "none";
+					} 
+					else {
+						  element.style.display = "block";	
+					}
+					
+				window.onload = function() {
+				
+				  document.getElementById("loader1").style.display = "none";
+				  alert('check 1');
+				  loaded_iframe();
+				}
+				
+			};	
+			
+			var loaded_iframe = function(iframe) {
+				indicator.style.display = 'none';
+				alert('loaded_iframe');
+			};
+			
+			window.onload = function() {
+				  alert('here');
+				  document.getElementById("loader1").style.display = "none";
+				  loaded_iframe();
+				  alert('check 3');
+			}
+*/		
+	
+/* just added this */
+
+
+/*
+
+$('#iframe1').load(function(){
+	alert('frame has finished (re)loading');
+	indicator.style.display = 'none';
+});
+
+$('#iframe1').load(function(){
+    alert('frame has (re)loaded');
+});
+
+document.getElementById('iframe1').onload = function() {
+  alert('gif should disappear now');
+  indicator.style.display = 'none';
+  start_iframee();
+};
+
+*/
+/* just added this */
+
+
+
+/*
+			$('#calendar_iframe').load(function(){
+				$('#calendar_iframe').contents().find('#contentRow').show();
+				$('#calendar_iframe').contents().find('#suiteBarDelta').hide();
+				$('#calendar_iframe').contents().find('#s4-ribbonrow').hide();
+				$('#calendar_iframe').contents().find('#s4-titlerow').hide();
+				$('#calendar_iframe').contents().find('#titleAreaBox').hide();
+			});
+*/
+	
+		</script>
+
+		
+<!--
+		<div id="mySidenav" class="sidenav"></div>
+		
+		<a href="javascript:void(0)">
+			<span id="side_nav_button" class="sidenvbtn" onclick="openNav()">
+				Need Help?
+			</span>
+		</a>
+-->
+		<!-- LEFT NAV BAR -->
+		<div id="BIFmySidenav" class="BIFsidenav">
+			<div Style="border-bottom:5px solid rgb(6, 116, 140);margin-bottom:0px;">
+				<p class='nav-header'>My Reporting Favorites</p>
+			</div>
+			<h2 style="text-indent:30px;">My Favorites</h2>
+			<div id="favorites" style="margin-left: -95px;">
+				 <!--<ul id="appendfavs">
+
+				</ul>-->
+			</div>
+			<div Style="border-bottom:1px solid #FFF;margin-bottom:5px;"></div>
+				
+			<!--	
+			<script>
+				/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+				var dropdown = document.getElementsByClassName("dropdown-btn");
+				var i;
+
+				for (i = 0; i < dropdown.length; i++) {
+							  dropdown[i].addEventListener("click", function() {
+							  this.classList.toggle("active");
+							  var dropdownContent = this.nextElementSibling;
+							  if (dropdownContent.style.display === "block") {
+							  dropdownContent.style.display = "none";
+							  } else {
+							  dropdownContent.style.display = "block";
+							  }
+							  });
+							}
+				</script>
+			-->
+		
+		
+		</div>
+		
+		<!-- LEFT NAV BUTTONS -->
+		<!--<div Style="width:200px;margin-top:105px;">-->
+		
+			<span id="BIFside_nav_button" class="BIFsidenvbtn" Style="text-align:center;" >
+				
+				<button id="navArrow" class="left_nav_btn" onclick="toggleNav();toggleNavColor('navArrow','bluearrow');" Style="display: inline-block; margin:0;">
+					myFavorite <br> Reports<br><br>
+					<i id="Left_Icons" class="fa-solid fa-bookmark"></i>
+					<i id="bluearrow" class="fas fa-play"></i>
+				</button>
+
+				<button id="navArrow2" class="left_nav_btn" onclick="toggleNavColor('navArrow2','bluearrow2')" Style="display: inline-block; margin:0;">
+					GRM Portal<br><br>
+					<i id="Left_Icons" class="fas fa-spinner"></i>
+					<i id="bluearrow2" class="fas fa-play"></i>
+				</button>	
+				
+
+	<!-- Remove 'Our Team Button' -->			
+<!--				<button id="navArrow3" class="left_nav_btn" onclick="toggleNavColor('navArrow3','bluearrow3')" Style="display: inline-block; margin:0;">
+					Our Team<br><br>
+					<i id="Left_Icons" class="fas fa-users"></i>
+					<i id="bluearrow3" class="fas fa-play"></i>
+				</button>
+			-->
+				<a href="https://libertymutual.sharepoint.com/sites/DistributionToolsandResources/Pages/Distribution-Tools-and-Resources.aspx?OR=Teams-HL&CT=1697035868266&clickparams=eyJBcHBOYW1lIjoiVGVhbXMtRGVza3RvcCIsIkFwcFZlcnNpb24iOiIyNy8yMzA5MDExMjI3OCIsIkhhc0ZlZGVyYXRlZFVzZXIiOmZhbHNlfQ%3D%3D" target="_blank" id="navArrow4" class="left_nav_btn_large"  Style="display: inline-block;">
+					Distribution Tools & Resources<br><br>
+					<i  id="Left_Icons" class="fa fa-laptop"></i>
+					<i id="bluearrow4" class="fas fa-play"></i>
+				
+				</a>	
+
+
+				<a href="https://forge.lmig.com/issues/servicedesk/customer/portal/1577" target="_blank" id="navArrow4" class="left_nav_btn"  Style="display: inline-block;padding-top:17px;">
+						Contact Us<br><br>
+						<i  id="Left_Icons" class="fa-solid fa-user"></i>
+						<i id="bluearrow4" class="fas fa-play"></i>
+						
+				</a>
+				<!-- 				
+				<a href="https://lm.my.salesforce.com/home/home.jsp" target="_blank" id="navArrow5" class="left_nav_btn"  Style="display: inline-block; padding-top:17px; border-bottom: 1px solid rgb(232, 232, 232);">
+						Salesforce<br><br>
+						<i  id="Left_Icons" class="fas fa-cloud"></i>
+						<i id="bluearrow5" class="fas fa-play"></i>
+						
+				</a>
+			-->				
+
+			</span> 								  
+		<!--</div> -->
+	
+		
+		<!-- GRM Reporting Portal POPUP  -->
+		<div id="GRM_Portal" class="GRM-content" style="position:absolute;">
+			<p> Loading GRM Reporting Portal... </p>
+			<iframe 
+				width="100%" 
+				height="100%" 
+				frameborder="0" 						
+				src="https://app.powerbi.com/reportEmbed?reportId=d2cf509c-b81f-41c1-a0f0-3e9a147a6182&appId=9bc0f485-1ef2-4743-b7e2-375dd02aa4c7&autoAuth=true&ctid=08a83339-90e7-49bf-9075-957ccd561bf1&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLW5vcnRoLWNlbnRyYWwtZC1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9">
+			</iframe>
+		</div>
+					
+		<!-- MEET OUR TEAM POPUP  -->
+		<!-- <div id="myModal" class="modal">   -->
+			<!-- <div class="modal-content" id="container">  -->
+				<!-- <img src="images/OrgChart.PNG" Style="height:100%;width:100%;overflow: auto;"></img> 			 -->
+			<!-- </div>  -->
+		<!-- </div>     -->
+
+				<script>
+					// var modal = document.getElementById('myModal'); 
+					var grm_view = document.getElementById('GRM_Portal');
+					var btn2 = document.getElementById("navArrow2");
+					// var btn = document.getElementById("navArrow3");
+					var span = document.getElementsByClassName("close")[0];
+
+					// btn.onclick = function() {
+						// if (modal.style.display == "block") {
+							// modal.style.display = "none";
+							// document.getElementById("navArrow3").style.color = "rgba(10, 5, 58, 1)";
+							// document.getElementById("navArrow3").style.backgroundColor = "rgba(255, 255, 255, 1)";
+							// document.getElementById("bluearrow3").style.color = "rgba(255, 255, 255, 1)";
+							// document.getElementById("bluearrow3").style.backgroundColor = "rgba(255, 255, 255, 1)";
+							// document.getElementById("bluearrow3").style.left = "10px";
+							// document.getElementById("bluearrow3").style.bottom = "12px";
+							// document.getElementById("bluearrow3").style.position = "relative";
+						   // document.getElementById("bluearrow3").style.display = "none";
+						// } else {
+							// modal.style.display = "block";
+							// document.getElementById("navArrow3").style.color = "white";
+							// document.getElementById("navArrow3").style.backgroundColor = "rgba(10, 5, 58, 1)";/* "rgba(10, 5, 58, 1)";*/
+							// document.getElementById("bluearrow3").style.color = "rgba(10, 5, 58, 1)";
+							// document.getElementById("bluearrow3").style.backgroundColor = "rgba(10, 5, 58, 0)";
+							// document.getElementById("bluearrow3").style.left = "55px";
+							// document.getElementById("bluearrow3").style.bottom = "25px";
+							// document.getElementById("bluearrow3").style.position = "relative"; 
+							// document.getElementById("bluearrow3").style.display = "block"							
+						// }	
+					// }
+					btn2.onclick = function() {
+						
+						if (grm_view.style.display == "block") {
+							grm_view.style.display = "none";
+							document.getElementById("navArrow2").style.color = "rgba(10, 5, 58, 1)";
+							document.getElementById("navArrow2").style.backgroundColor = "rgba(255, 255, 255, 1)";
+							document.getElementById("bluearrow2").style.color = "rgba(255, 255, 255, 1)";
+							document.getElementById("bluearrow2").style.backgroundColor = "rgba(255, 255, 255, 1)";
+							document.getElementById("bluearrow2").style.left = "10px";
+							document.getElementById("bluearrow2").style.bottom = "12px";
+							document.getElementById("bluearrow2").style.position = "relative";
+							document.getElementById("bluearrow2").style.display = "none";
+						} else {
+							grm_view.style.display = "block";
+							document.getElementById("navArrow2").style.color = "white";
+							document.getElementById("navArrow2").style.backgroundColor = "rgba(10, 5, 58, 1)";/* "rgba(10, 5, 58, 1)";*/
+							document.getElementById("bluearrow2").style.color = "rgba(10, 5, 58, 1)";
+							document.getElementById("bluearrow2").style.backgroundColor = "rgba(10, 5, 58, 0)";
+							document.getElementById("bluearrow2").style.left = "55px";
+							document.getElementById("bluearrow2").style.bottom = "25px";
+							document.getElementById("bluearrow2").style.position = "relative"; 
+							document.getElementById("bluearrow2").style.display = "block"
+						}						
+					}
+					
+				</script>
+				
+
+
+	</div><!--wrapper-->
+	
+
+
+</div><!--main-->
+
+		<div id="footer">
+		</div><!-- END FOOTER -->	
+		
+		
+		<!-- Javascript -->
+
+		<!-- Favorites calls -->
+		<script src="cookies_fav.js"></script> 
+		<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.SPServices/0.7.2/jquery.SPServices-0.7.2.min.js"></script>
+		
+</body>
+</html>
