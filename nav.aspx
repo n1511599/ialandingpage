@@ -28,7 +28,7 @@
 		</script>
 
                 <!-- HOME BUTTON -->
-                <a href="index.aspx" style="margin:0px 0px 0px 0px;padding:0px;">
+                <a href="index.html" style="margin:0px 0px 0px 0px;padding:0px;">
                     <div class="dropdown1">
                           <button class="dropbtn1">
                               <i class="fa fa-fw fa-home"></i><strong>Home</strong>
